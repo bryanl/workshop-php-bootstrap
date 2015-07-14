@@ -4,6 +4,12 @@ In this workshop, we will be working with a simple deployment. The deployment wi
 
 ## Reviewing our application
 
+Our application relies on three components:
+
+1. Mysql is used to store our application's data. The data stored will be x and y coordinates of the mouse's click.
+2. PHP application to store and load click coordinates.
+3. Javascript application to collect and show click coordinates.
+
 ## Introducing Fabric
 
 Fabric is a tool written in Python that be used to install apps and run commands on remote servers. Tasks are created to facilitate the actions.
