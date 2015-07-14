@@ -23,12 +23,12 @@ def install_packages():
     run('apt-get install aptitude')
     run('aptitude update')
     run('aptitude upgrade -y')
-    run('apt-get install -y debconf-utils')
+    run('apt-get install -y -q debconf-utils')
     run('debconf-set-selections <<< "mysql-server mysql-server/root_password password jcQHbQjfEya27EHZ"')
     run('debconf-set-selections <<< "mysql-server mysql-server/root_password_again password jcQHbQjfEya27EHZ"')
-    run('aptitude install -y mysql-server')
-    run('aptitude install -y php5-mysql')
-    run('aptitude install -y libapache2-mod-php5 php5 git')
+    run('aptitude install -y -q mysql-server')
+    run('aptitude install -y -q php5-mysql')
+    run('aptitude install -y -q libapache2-mod-php5 php5 git')
 
 def deploy():
     """ Deploy our app by pulling it from github """
