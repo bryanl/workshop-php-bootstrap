@@ -8,6 +8,7 @@ $stmt->execute();
 
 $stmt->bind_result($x, $y);
 
+$results = array();
 while($stmt->fetch()) {
     $x = array('x' => $x, 'y' => $y);
     $results[] = $x;
