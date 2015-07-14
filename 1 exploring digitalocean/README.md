@@ -36,7 +36,17 @@ And provide a SSH key...
 
 ## Lab 1: Creating a DigitalOcean Droplet
 
-In our first lab, we'll create a Droplet that will serve as our home base. This will be easier as it won't require any local configuration on your computer.
+In our first lab, we'll create a Droplet that will serve as our home base. This will be easier as it won't require any local configuration on your computer. Before starting, think of an identifier to use, so you will be able to find your Droplets later on. An example of an identifier is <first initial><last name>. (i.e. `bliles`)
+
+1. Log into Cloud
+
+1. Create a Droplet from Console. During the workshop, we will be using a team account if you do not already have one. Create a Droplet with the following parameters: 
+```
+Hostname: <identifier>-lab1
+Size: 512 MB
+Region: NYC3
+Image Ubuntu 14.04 x64
+```
 
 
 ## DigitalOcean's API
@@ -52,3 +62,33 @@ The DigitalOcean API has a documentation site at [https://developers.digitalocea
 ## Lab 2: Using the DigitalOcean API
 
 In this lab, we will use the DigitalOcean API to create a Droplet from the command line.
+
+1. Create SSH key
+
+1. Create OAuth token. Make sure to take note of your token as it won't be displayed again.
+
+1. Add OAuth token to environment
+
+1. Create Droplet. To create a Droplet, you can use the following as a guide.
+```sh
+curl -X POST -H 'Content-Type: application/json' \ 
+ -H 'Authorization: Bearer <token>' \
+ -d '{"name":"<identifier>-api-1","region":"nyc3","size":"512mb","image":"ubuntu-14-04-x64"}' \
+ "https://api.digitalocean.com/v2/droplets"
+```
+
+1. Wait for Droplet to come up
+
+1. Review Droplet in Cloud.
+
+1. Review Droplet from API.
+```sh
+curl -X GET -H 'Content-Type: application/json' \
+-H 'Authorization: Bearer <token>' \
+"https://api.digitalocean.com/v2/droplets/<droplet id>"
+```
+
+1. Log in to Droplet.
+```sh
+ssh root@<droplet ip>
+```
