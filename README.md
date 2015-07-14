@@ -1,11 +1,13 @@
 # Deploying PHP Apps to DigitalOcean
 
-This workshop is intended to get the reader familiar with deploying PHP applications using DigitalOcean. Topics from becoming familiar with DigitalOcean's API, to utilizing Docker, to finally working with an open source Platform as a service (PaaS) will be covered.
+This workshop is intended to get the participant familiar with deploying PHP applications using DigitalOcean. Topics from becoming familiar with DigitalOcean's API, to utilizing Docker, to finally working with an open source Platform as a service (PaaS) will be covered.
+
+The goal of this workshop is to guide the participant through deploying a PHP app using three different technologies to DigitalOcean.
 
 ## Requirements
 
 * A computer with a terminal client and ssh. If you are using Linux, FreeBSD, or a Mac, you have all the requirements. If you are using Windows, you can use [PuTTy](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) or a similar application.
-* A DigitalOcean 
+* A DigitalOcean account.
 
 ## Syllabus
 
