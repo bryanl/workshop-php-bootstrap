@@ -22,10 +22,10 @@ def install_packages():
     """ Install a bare minimum LAMP stack """
     run('apt-get install aptitude')
     run('aptitude update')
-    run('aptitude upgrade')
-    run('aptitude install mysql-server')
-    run('aptitude install php5-mysql')
-    run('aptitude install libapache2-mod-php5 php5 git')
+    run('aptitude upgrade -y')
+    run('aptitude install -y mysql-server')
+    run('aptitude install -y php5-mysql')
+    run('aptitude install -y libapache2-mod-php5 php5 git')
 
 def deploy():
     """ Deploy our app by pulling it from github """
