@@ -24,4 +24,16 @@ def host_type():
 In this lab, we will create a new server, and deploy our application.
 
 1. Create a new Droplet to serve as your application server.  
-2. 
+```sh
+doit droplet create --droplet-name <identifer>-fab --region nyc3 --size 2gb --ssh-keys <ssh key id> --image ubuntu-14-04-x64
+```
+
+1. Bootstrap your server
+```sh
+fab -H root@<server ip> bootstrap
+```
+
+1. Configure your DB
+```sh
+fab -H root@<server ip> db_setup
+```
