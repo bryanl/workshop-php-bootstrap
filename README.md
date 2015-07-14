@@ -11,26 +11,30 @@ The goal of this workshop is to guide the participant through deploying a PHP ap
 
 ## Syllabus
 
-### Getting Started
+### [1. Exploring DigitalOcean](1 exploring digitalocean)
 
 In this section, we will review DigitalOcean and its API. 
 
-### Deploying our PHP application
+### [2. Deploying our PHP application](2 deploying with fabric)
 
 In this section, we will review a method to deploy a PHP application to DigitalOcean.
 
-### Introducing Docker
+### [3. Introducing Docker](3 starting with docker)
 
 In this section, Docker will be introduced, and we will review how to integrate your application with Docker.
 
-### Deploying with Docker
+### [4. Docker and our application](4 docker and our app)
+
+In this section, we will learn how to integrate Docker with our application.
+
+### [5. Deploying with Docker](5 deploying with docker)
 
 In this section, we will learn how to deploy our application with Docker. 
 
-### Scaling with Docker
+### [6. Scaling with Docker](6 scaling with docker-swarm)
 
 In this section, we will learn how to scale our application with Docker.
 
-### Introducing Deis
+### [7. Introducing Deis](7 deploying with deis)
 
 In this section, we will learn how to deploy our application to the Deis, a popular PaaS
