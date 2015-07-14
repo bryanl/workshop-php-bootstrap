@@ -8,6 +8,8 @@ def host_type():
 
 def bootstrap():
     """ bootstraps a new node """
+    install_packages()
+
     if not exists("/app/workshop-php-bootstrap/"):
         run("mkdir -p /app/")
         with cd("/app/"):
@@ -21,8 +23,9 @@ def install_packages():
     run('apt-get install aptitude')
     run('aptitude update')
     run('aptitude upgrade')
-    run('aptitude install libapache2-mod-php5 php5 git')
     run('aptitude install mysql-server')
+    run('aptitude install php5-mysql')
+    run('aptitude install libapache2-mod-php5 php5 git')
 
 def deploy():
     """ Deploy our app by pulling it from github """
