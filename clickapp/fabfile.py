@@ -66,7 +66,7 @@ def revert():
         with cd("/app/"):
             run("tar -xzf /root/workshop-php-bootstrap.tgz")
 
-def db_setup(user='root', password):
+def db_setup(user='root', password='password'):
     """ set up a new database """
 
     cmd = "mysql -u %s -p%s -h localhost < /app/workshop-php-bootstrap/clickapp/db/db.sql" % (user, password)
