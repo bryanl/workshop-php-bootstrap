@@ -1,6 +1,6 @@
 # Deploying PHP Apps to DigitalOcean
 
-This workshop is intended to get the participant familiar with deploying PHP applications using DigitalOcean. Topics from becoming familiar with DigitalOcean's API, to utilizing Docker, to finally working with an open source Platform as a service (PaaS) will be covered.
+This workshop is intended to get the participant familiar with deploying PHP applications using DigitalOcean. Topics are becoming familiar with DigitalOcean's API, and utilizing Docker.
 
 The goal of this workshop is to guide the participant through deploying a PHP app using three different technologies to DigitalOcean.
 
@@ -30,11 +30,3 @@ In this section, we will learn how to integrate Docker with our application.
 ### [5. Deploying with Docker](5 deploying with docker)
 
 In this section, we will learn how to deploy our application with Docker. 
-
-### [6. Scaling with Docker](6 scaling with docker-swarm)
-
-In this section, we will learn how to scale our application with Docker.
-
-### [7. Introducing Deis](7 deploying with deis)
-
-In this section, we will learn how to deploy our application to the Deis, a popular PaaS

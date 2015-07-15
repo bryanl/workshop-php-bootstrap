@@ -23,9 +23,23 @@ def host_type():
 
 In this lab, we will create a new server, and deploy our application.
 
+1. Create a SSH key
+```sh
+ssh-keygen -n <identifier>@workshop -t rsa
+```
+Cut and paste the key into the Cloud UI
+
 1. Create a new Droplet to serve as your application server.  
 ```sh
-doit droplet create --droplet-name <identifer>-fab --region nyc3 --size 2gb --ssh-keys <ssh key id> --image ubuntu-14-04-x64
+doit key list
+doit droplet create --droplet-name <identifer>-app --region nyc3 --size 2gb --ssh-keys <ssh key id> --image ubuntu-14-04-x64
+doit droplet list
+```
+1. Clone the deploy script
+```sh
+cd ~
+git clone https://github.com/bryanl/workshop-php-bootstrap.git
+cd workshop-php-bootstrap/clickapp
 ```
 
 1. Bootstrap your server
@@ -35,5 +49,10 @@ fab -H root@<server ip> bootstrap
 
 1. Configure your DB
 ```sh
-fab -H root@<server ip> db_setup
+fab -H root@<server ip> db_setup:password='jcQHbQjfEya27EHZ'
+```
+
+1. Deploy your APP
+```sh
+fab -H root@<server ip> deploy
 ```
