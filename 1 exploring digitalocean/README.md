@@ -65,11 +65,14 @@ In this lab, we will use the DigitalOcean API to create a Droplet from the comma
 
 1. Create SSH key
 
-1. Create OAuth token. Make sure to take note of your token as it won't be displayed again.
+1. Create an OAuth token. Make sure to take note of your token as it won't be displayed again.
 
-1. Add OAuth token to environment
+1. Add your OAuth token to workshop environment.
+```sh
+export DIGITALOCEAN_TOKEN=<your token>
+```
 
-1. Create Droplet. To create a Droplet, you can use the following as a guide.
+1. Create Workshop Droplet. To create a Droplet, you can use the following as a guide.
 ```sh
 curl -X POST -H 'Content-Type: application/json' \ 
  -H 'Authorization: Bearer <token>' \
