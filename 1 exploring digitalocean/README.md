@@ -1,6 +1,6 @@
 # Exploring DigitalOcean
 
-DigitalOcean is an Infrastructure as a Service provider. What that means is we provide virtual compute resources which you can run your applications on. DigitalOcean provides multiple operating systems and applications you can build on. We call these compute resources Droplets. 
+DigitalOcean is an Infrastructure as a Service provider. What that means is we provide virtual compute resources which you can run your applications on. DigitalOcean provides multiple operating systems and applications you can build on. We call these compute resources Droplets.
 
 ## Booting a DigitalOcean Droplet
 
@@ -40,7 +40,7 @@ In our first lab, we'll create a Droplet that will serve as our home base. This 
 
 1. Log into Cloud
 
-1. Create a Droplet from Console. During the workshop, we will be using a team account if you do not already have one. Create a Droplet with the following parameters: 
+1. Create a Droplet from Console. During the workshop, we will be using a team account if you do not already have one. Create a Droplet with the following parameters:
 ```
 Hostname: <identifier>-lab1
 Size: 512 MB
@@ -71,15 +71,13 @@ In this lab, we will use the DigitalOcean API to create a Droplet from the comma
 ```sh
 export DIGITALOCEAN_TOKEN=<your token>
 ```
-
 1. Create Workshop Droplet. To create a Droplet, you can use the following as a guide.
 ```sh
-curl -X POST -H 'Content-Type: application/json' \ 
+curl -X POST -H 'Content-Type: application/json' \
  -H 'Authorization: Bearer <token>' \
  -d '{"name":"<identifier>-api-1","region":"nyc3","size":"512mb","image":"ubuntu-14-04-x64"}' \
  "https://api.digitalocean.com/v2/droplets"
 ```
-
 1. Wait for Droplet to come up
 
 1. Review Droplet in Cloud.
@@ -90,7 +88,6 @@ curl -X GET -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer <token>' \
 "https://api.digitalocean.com/v2/droplets/<droplet id>"
 ```
-
 1. Log in to Droplet.
 ```sh
 ssh root@<droplet ip>
