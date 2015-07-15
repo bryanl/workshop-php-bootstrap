@@ -2,7 +2,7 @@
 
 This workshop is intended to get the participant familiar with deploying PHP applications using DigitalOcean. Topics are becoming familiar with DigitalOcean's API, and utilizing Docker.
 
-The goal of this workshop is to guide the participant through deploying a PHP app using three different technologies to DigitalOcean.
+The goal of this workshop is to guide the participant through deploying a PHP app using two different technologies to DigitalOcean.
 
 ## Requirements
 
@@ -13,7 +13,7 @@ The goal of this workshop is to guide the participant through deploying a PHP ap
 
 ### [1. Exploring DigitalOcean](1 exploring digitalocean)
 
-In this section, we will review DigitalOcean and its API. 
+In this section, we will review DigitalOcean and its API.
 
 ### [2. Deploying our PHP application](2 deploying with fabric)
 
@@ -29,4 +29,4 @@ In this section, we will learn how to integrate Docker with our application.
 
 ### [5. Deploying with Docker](5 deploying with docker)
 
-In this section, we will learn how to deploy our application with Docker. 
+In this section, we will learn how to deploy our application with Docker.
